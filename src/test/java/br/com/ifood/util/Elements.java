@@ -1,6 +1,6 @@
-package br.com.itera.util;
-import br.com.itera.steps.BaseSteps;
+package br.com.ifood.util;
 
+import br.com.ifood.steps.BaseSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

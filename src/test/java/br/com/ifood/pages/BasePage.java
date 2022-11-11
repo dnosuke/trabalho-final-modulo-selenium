@@ -1,6 +1,6 @@
-package br.com.itera.pages;
+package br.com.ifood.pages;
 
-import br.com.itera.util.Elements;
+import br.com.ifood.util.Elements;
 import org.openqa.selenium.By;
 
 public class BasePage extends Elements {

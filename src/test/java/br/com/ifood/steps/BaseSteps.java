@@ -1,6 +1,6 @@
-package br.com.itera.steps;
+package br.com.ifood.steps;
 
-import br.com.itera.util.Browser;
+import br.com.ifood.util.Browser;
 import org.junit.After;
 import org.junit.Before;
 
@@ -8,7 +8,7 @@ public class BaseSteps extends Browser {
 
     @Before
     public void abrirNavegador() {
-        browserUp("https://automacaocombatista.herokuapp.com/treinamento/home");
+        browserUp("https://www.ifood.com.br/inicio");
     }
 
     @After
