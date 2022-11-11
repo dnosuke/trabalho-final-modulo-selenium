@@ -23,9 +23,4 @@ public class BasePage extends Elements {
         return element(by).getText();
     }
 
-    public static String getStyleAttributeText(By by) {
-
-        waitElement(by);
-        return element(by).getAttribute("style");
-    }
 }
