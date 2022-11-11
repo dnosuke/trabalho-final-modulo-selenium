@@ -1,6 +1,7 @@
-package br.com.ifood.pages;
+package br.com.Ifood.pages;
 
 import org.openqa.selenium.By;
+
 public class HomePage extends BasePage {
 
     private static final By campoEndereco =

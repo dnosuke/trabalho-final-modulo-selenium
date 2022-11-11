@@ -1,0 +1,8 @@
+br\com\Ifood\util\ListenerTest.class
+br\com\Ifood\pages\HomePage.class
+br\com\Ifood\steps\BaseSteps.class
+br\com\Ifood\pages\LandingPage.class
+br\com\Ifood\util\Elements.class
+br\com\Ifood\pages\BasePage.class
+br\com\Ifood\steps\LandingSteps.class
+br\com\Ifood\util\Browser.class

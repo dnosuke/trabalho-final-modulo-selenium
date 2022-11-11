@@ -1,14 +1,12 @@
-package br.com.ifood.steps;
+package br.com.Ifood.steps;
 
-import br.com.ifood.pages.HomePage;
-import br.com.ifood.pages.LandingPage;
-import org.junit.Assert;
-import org.junit.Test;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+import br.com.Ifood.pages.HomePage;
+import br.com.Ifood.pages.LandingPage;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 
 public class LandingSteps extends BaseSteps{
-
     LandingPage landingPage = new LandingPage();
 
     HomePage homePage = new HomePage();
@@ -41,4 +39,6 @@ public class LandingSteps extends BaseSteps{
 
         Assert.assertEquals("Verifique o nome e número do local e busque novamente", mensagemErro);
     }
+
+
 }
