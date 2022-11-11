@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" verbose="2">
     <listeners>
-        <listener class-name="br.com.Ifood.util.ListenerTest"></listener>
+        <listener class-name="br.com.ifood.util.ListenerTest"></listener>
     </listeners>
     <test name="User Tests">
         <classes>
-            <class name="br.com.Ifood.steps.BaseSteps" />
-            <class name="br.com.Ifood.steps.LandingSteps" />
+            <class name="br.com.ifood.steps.BaseSteps" />
+            <class name="br.com.ifood.steps.LandingSteps" />
         </classes>
     </test>
 </suite>

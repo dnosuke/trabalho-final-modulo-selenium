@@ -1,39 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 27.567 s <<< FAILURE! - in TestSuite
-br.com.Ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 3.24 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.061 s <<< FAILURE! - in TestSuite
+br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 3.009 s  <<< FAILURE!
 java.lang.AssertionError: 
 expected [R. Prof. Geraldo Rosa,
 588] but found [R. Uberlândia,
 588]
-	at br.com.Ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:22)
-
-br.com.Ifood.steps.LandingSteps.deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio  Time elapsed: 5.429 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b8724ba5d355563a549ec900ff1fda3, findElement {using=css selector, value=body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53417/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b8724ba5d355563a549ec900ff1fda3
-	at br.com.Ifood.steps.LandingSteps.deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio(LandingSteps.java:29)
-
-br.com.Ifood.steps.LandingSteps.deveRetornarMensagemErroAoInformarEnderecoInvalido  Time elapsed: 10.945 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button (tried for 10 second(s) with 500 milliseconds interval)
-	at br.com.Ifood.steps.LandingSteps.deveRetornarMensagemErroAoInformarEnderecoInvalido(LandingSteps.java:37)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b8724ba5d355563a549ec900ff1fda3, findElement {using=css selector, value=body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53417/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b8724ba5d355563a549ec900ff1fda3
-	at br.com.Ifood.steps.LandingSteps.deveRetornarMensagemErroAoInformarEnderecoInvalido(LandingSteps.java:37)
+	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:22)
 

@@ -1,11 +1,9 @@
-package br.com.Ifood.util;
+package br.com.ifood.util;
 
-import br.com.Ifood.steps.BaseSteps;
+import br.com.ifood.steps.BaseSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import static br.com.Ifood.util.Browser.driver;
 
 public class Elements extends BaseSteps {
 

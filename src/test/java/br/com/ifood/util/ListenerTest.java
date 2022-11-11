@@ -1,4 +1,4 @@
-package br.com.Ifood.util;
+package br.com.ifood.util;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -10,6 +10,8 @@ import org.testng.Reporter;
 
 import java.io.File;
 import java.io.IOException;
+
+import static io.qameta.allure.Allure.addAttachment;
 
 public class ListenerTest implements ITestListener {
     @Override
@@ -32,6 +34,7 @@ public class ListenerTest implements ITestListener {
         try {
             File destFile = new File ("./ScreenShot/"+Result.getName()+".jpg");
             FileUtils.copyFile(srcFile, destFile);
+            addAttachment(Result.getName(), FileUtils.openInputStream(destFile));
             Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
         }
         catch (IOException e) {

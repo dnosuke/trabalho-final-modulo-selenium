@@ -1,4 +1,4 @@
-package br.com.Ifood.util;
+package br.com.ifood.util;
 
 
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,6 @@ import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class Browser {

@@ -2,19 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="br.com.Ifood.util.ListenerTest"/>
+    <listener class-name="br.com.ifood.util.ListenerTest"/>
   </listeners>
   <test thread-count="5" verbose="0" name="User Tests(failed)">
     <classes>
-      <class name="br.com.Ifood.steps.LandingSteps">
+      <class name="br.com.ifood.steps.LandingSteps">
         <methods>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
-          <include name="deveRetornarMensagemErroAoInformarEnderecoInvalido"/>
-          <include name="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio"/>
           <include name="deveInformarEnderecoEscolhidoNavBar"/>
         </methods>
-      </class> <!-- br.com.Ifood.steps.LandingSteps -->
+      </class> <!-- br.com.ifood.steps.LandingSteps -->
     </classes>
   </test> <!-- User Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

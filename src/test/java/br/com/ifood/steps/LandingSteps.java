@@ -1,7 +1,7 @@
-package br.com.Ifood.steps;
+package br.com.ifood.steps;
 
-import br.com.Ifood.pages.HomePage;
-import br.com.Ifood.pages.LandingPage;
+import br.com.ifood.pages.HomePage;
+import br.com.ifood.pages.LandingPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

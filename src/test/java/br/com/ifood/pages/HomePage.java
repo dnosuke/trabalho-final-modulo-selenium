@@ -1,4 +1,4 @@
-package br.com.Ifood.pages;
+package br.com.ifood.pages;
 
 import org.openqa.selenium.By;
 
