@@ -19,6 +19,8 @@ out/
 *.iws
 *.iml
 *.ipr
+.allure-results
+.target
 
 ### NetBeans ###
 /nbproject/private/

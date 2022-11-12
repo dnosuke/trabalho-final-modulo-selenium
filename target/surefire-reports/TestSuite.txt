@@ -1,63 +1,44 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 89.524 s <<< FAILURE! - in TestSuite
-br.com.ifood.steps.LandingSteps.deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero  Time elapsed: 2.465 s  <<< FAILURE!
-java.lang.AssertionError: expected [null] but found [true]
-	at br.com.ifood.steps.LandingSteps.deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero(LandingSteps.java:84)
-
-br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 2.662 s  <<< FAILURE!
+Tests run: 11, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 104.597 s <<< FAILURE! - in TestSuite
+br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 2.206 s  <<< FAILURE!
 java.lang.AssertionError: 
 expected [] but found [R. Uberlândia,
 588]
-	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:28)
+	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:25)
 
-br.com.ifood.steps.LandingSteps.devePedirNumeroDoEnderecoCasoNaoSejaInformado  Time elapsed: 2.244 s  <<< FAILURE!
-java.lang.AssertionError: expected [] but found [Você não informou o número de endereço]
-	at br.com.ifood.steps.LandingSteps.devePedirNumeroDoEnderecoCasoNaoSejaInformado(LandingSteps.java:58)
+br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido  Time elapsed: 2.026 s  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found [true]
+	at br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido(LandingSteps.java:80)
 
-br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo  Time elapsed: 9.669 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active"}
+br.com.ifood.steps.HomeSteps.testeDeveRedirecionarParaAPaginaDaLoja  Time elapsed: 4.841 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="merchant-v2__figure-container">...</div> is not clickable at point (419, 550). Other element would receive the click: <div class="tab-bar">...</div>
   (Session info: headless chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf2efedda086b168d39f0b5548706e8, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59772/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fcf2efedda086b168d39f0b5548706e8
-	at br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo(HomeSteps.java:29)
+Command: [31defaf1eaece524a494758d611eab13, clickElement {id=b5674429-b34d-41b5-962a-7b2a010c7ddf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49883/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (31defaf1eaece524a494758d611eab13)] -> css selector: #__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(1) > div > div.merchant-list-v2__wrapper > div:nth-child(2) > a > div > div.merchant-v2__figure-container]
+Session ID: 31defaf1eaece524a494758d611eab13
+	at br.com.ifood.steps.HomeSteps.testeDeveRedirecionarParaAPaginaDaLoja(HomeSteps.java:61)
 
-br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe  Time elapsed: 9.57 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next"}
-  (Session info: headless chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4df46959f5857703c0a744f17e57e252, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59832/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4df46959f5857703c0a744f17e57e252
-	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:41)
-
-br.com.ifood.steps.HomeSteps.testeVerificarImagemTrocaDeTamanho  Time elapsed: 4.096 s  <<< FAILURE!
+br.com.ifood.steps.HomeSteps.testeVerificarImagemTrocaDeTamanho  Time elapsed: 3.929 s  <<< FAILURE!
 java.lang.AssertionError: did not expect [none] but found [none]
 	at br.com.ifood.steps.HomeSteps.testeVerificarImagemTrocaDeTamanho(HomeSteps.java:20)
 
-br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 10.536 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button (tried for 10 second(s) with 500 milliseconds interval)
-	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:48)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button"}
+br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 5.113 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="button" role="button" class="btn btn--default btn--white btn--size-m btn--full-width cardstack-nextcontent__button" aria-label="..." color="white" variant="cardstack-nextcontent__button" theme="default" target="" rel="">Ver mais</button> is not clickable at point (391, 575). Other element would receive the click: <div class="tab-bar">...</div>
   (Session info: headless chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25099d1270729eb8a4defabd2d9fd2b0, findElement {using=css selector, value=body > div:nth-child(11) > div > div > div > div > div > div:nth-child(1) > div > div > div.address-list-step__container.address-list-step__container--visible > div.address-search-input.address-search-input--role-button > button.address-search-input__button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59935/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25099d1270729eb8a4defabd2d9fd2b0
-	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:48)
+Command: [b231f0add460e76d5928771174d750f6, clickElement {id=78da1de4-47e0-4e61-a05a-4d8de00ad2ac}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50157/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b231f0add460e76d5928771174d750f6)] -> css selector: #__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(2) > div > button]
+Session ID: b231f0add460e76d5928771174d750f6
+	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:51)
 
