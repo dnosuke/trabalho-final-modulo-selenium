@@ -54,7 +54,8 @@ public class HomeSteps extends BaseSteps {
         Assert.assertNotEquals(listaAntesClickProdutosOuLojas, listaDepoisClickProdutosOuLojas);
     }
 
-    @Test
+    @Test(description = "Teste redirecionar para página da Loja.")
+    @Description("Descrição Teste: Validar clicar numa loja da lista Lojas redireciona para página com detalhes da loja.")
     public void testeDeveRedirecionarParaAPaginaDaLoja() {
 
         homePage.entrarPaginaHome();

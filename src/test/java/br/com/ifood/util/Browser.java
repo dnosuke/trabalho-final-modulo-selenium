@@ -23,7 +23,7 @@ public class Browser {
         LoggingPreferences logPrefs = new LoggingPreferences();
         logPrefs.enable( LogType.PERFORMANCE, Level.ALL );
         options.setCapability( "goog:loggingPrefs", logPrefs );
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
 
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20, 1));
