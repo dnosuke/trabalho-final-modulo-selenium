@@ -33,6 +33,11 @@ public class HomePage extends BasePage {
     private static final By listaDeProdutos =
             By.cssSelector("#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(1) > div > div.merchant-list-v2__wrapper");
 
+    private static final By cardLojaHome =
+            By.cssSelector("#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(1) > div > div.merchant-list-v2__wrapper > div:nth-child(2) > a > div > div.merchant-v2__figure-container");
+
+    private static final By tituloLoja =
+            By.cssSelector("#__next > div:nth-child(1) > main > div.restaurant-container > div > header.merchant-info > div.merchant-info__content-container > div > div.merchant-info__title-container > h1");
 
     public void entrarPaginaHome() {
 
@@ -102,5 +107,15 @@ public class HomePage extends BasePage {
     public String verificarClasseQuartoBanner() {
 
         return element(quartoImageBanner).getAttribute("class");
+    }
+
+    public void clicarCardLoja() {
+
+        click(cardLojaHome);
+    }
+
+    public String buscarCampoTituloLoja() {
+
+        return getText(tituloLoja);
     }
 }

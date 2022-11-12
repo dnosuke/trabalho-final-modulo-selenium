@@ -51,4 +51,20 @@ public class HomeSteps extends BaseSteps {
 
         Assert.assertNotEquals(listaAntesClickProdutosOuLojas, listaDepoisClickProdutosOuLojas);
     }
+
+    @Test
+    public void testeDeveRedirecionarParaAPaginaDaLoja() {
+
+        homePage.entrarPaginaHome();
+        homePage.clicarCardLoja();
+
+        String tituloLoja = homePage.buscarCampoTituloLoja();
+        tituloLoja.replaceAll(" ", "-");
+
+        String urlAtual = driver.getCurrentUrl();
+
+        Assert.assertTrue(urlAtual.contains(tituloLoja));
+    }
+
+
 }

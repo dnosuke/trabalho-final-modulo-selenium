@@ -25,7 +25,7 @@ public class Browser {
         options.setCapability( "goog:loggingPrefs", logPrefs );
 
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10, 1));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20, 1));
 
         driver.get(url);
         driver.manage().window().maximize();

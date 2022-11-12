@@ -53,7 +53,6 @@ public class LandingSteps extends BaseSteps{
         String msg = landingPage.buscarCampoErrorEnderecoSemNumero();
 
         Assert.assertEquals("Você não informou o número de endereço", msg);
-
     }
 
     @Test
@@ -68,7 +67,7 @@ public class LandingSteps extends BaseSteps{
     }
 
     @Test
-    public void deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero() {
+    public void deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido() {
 
         landingPage.preencherEnderecoSemNumero();
         landingPage.clicarPrimeiroItemDaLista();
