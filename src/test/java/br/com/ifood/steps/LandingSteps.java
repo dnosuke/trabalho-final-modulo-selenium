@@ -32,7 +32,7 @@ public class LandingSteps extends BaseSteps{
     }
 
     @Test
-    public void deveRetornarMensagemErroAoInformarEnderecoInvalido() throws InterruptedException {
+    public void deveRetornarMensagemErroAoInformarEnderecoInvalido() {
 
         landingPage.preencherCampoEnderecoInvalido();
         String mensagemErro = landingPage.buscarCampoMensagemErroEnderecoInvalido();
@@ -41,4 +41,37 @@ public class LandingSteps extends BaseSteps{
     }
 
 
+    @Test
+    public void devePedirNumeroDoEnderecoCasoNaoSejaInformado() {
+
+        landingPage.preencherEnderecoSemNumero();
+        landingPage.clicarPrimeiroItemDaLista();
+        String msg = landingPage.buscarCampoErrorEnderecoSemNumero();
+
+        Assert.assertEquals("Você não informou o número de endereço", msg);
+
+    }
+
+    @Test
+    public void deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado() {
+
+        landingPage.preencherEnderecoSemNumero();
+        landingPage.clicarPrimeiroItemDaLista();
+
+        String btnBuscarEnderecoDisabled = landingPage.verificarBtnEstaDesabilitado();
+
+        Assert.assertEquals("true", btnBuscarEnderecoDisabled);
+    }
+
+    @Test
+    public void deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero() {
+
+        landingPage.preencherEnderecoSemNumero();
+        landingPage.clicarPrimeiroItemDaLista();
+        landingPage.preencherCampoNumeroComLetras();
+
+        String btnBuscarEnderecoDisabled = landingPage.verificarBtnEstaDesabilitado();
+
+        Assert.assertEquals("true", btnBuscarEnderecoDisabled);
+    }
 }
