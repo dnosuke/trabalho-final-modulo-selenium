@@ -6,11 +6,21 @@
   </listeners>
   <test thread-count="5" verbose="0" name="User Tests(failed)">
     <classes>
-      <class name="br.com.ifood.steps.HomeSteps">
+      <class name="br.com.ifood.steps.LandingSteps">
         <methods>
-          <include name="teste"/>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
+          <include name="deveInformarEnderecoEscolhidoNavBar"/>
+        </methods>
+      </class> <!-- br.com.ifood.steps.LandingSteps -->
+      <class name="br.com.ifood.steps.HomeSteps">
+        <methods>
+          <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
+          <include name="testeVerficarQuartoBannerEstaAtivo"/>
+          <include name="abrirNavegador"/>
+          <include name="fecharNavegador"/>
+          <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
+          <include name="testeVerificarImagemTrocaDeTamanho"/>
         </methods>
       </class> <!-- br.com.ifood.steps.HomeSteps -->
     </classes>

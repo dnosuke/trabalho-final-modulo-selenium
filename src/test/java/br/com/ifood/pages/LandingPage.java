@@ -1,6 +1,7 @@
 package br.com.ifood.pages;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class LandingPage extends BasePage{
@@ -19,6 +20,7 @@ public class LandingPage extends BasePage{
 
     private static final By mensagemErroEnderecoInvalido =
             By.cssSelector("body > div:nth-child(11) > div > div > div > div > div > div:nth-child(2) > div > div.address-search-step > div.address-search-step__results > div > span");
+    @Step("Preencher campo endereço.")
     public String preencherCampoEndereco() {
 
         String endereco = "rua uberlandia 588";
@@ -27,7 +29,7 @@ public class LandingPage extends BasePage{
         return endereco;
     }
 
-
+    @Step("Preencher campo endereço com endereço inválido.")
     public String preencherCampoEnderecoInvalido() {
 
         String endereco = "rua @@@@@";
@@ -47,12 +49,12 @@ public class LandingPage extends BasePage{
 
         click(primeiroEnderecoLista);
     }
-
+    @Step("Cliclar no botão salvar localização.")
     public void clicarBotaoConfirmarLocalizacao() {
 
         click(botaoConfirmarLocalizacao);
     }
-
+    @Step("Cliclar no botão salvar endereço.")
     public void clicarSalvarEndereco() {
 
         click(botaoSalvarEndereco);

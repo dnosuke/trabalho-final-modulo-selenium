@@ -2,16 +2,20 @@ package br.com.ifood.steps;
 
 import br.com.ifood.pages.HomePage;
 import br.com.ifood.pages.LandingPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+@Feature("Landing Teste")
 public class LandingSteps extends BaseSteps{
     LandingPage landingPage = new LandingPage();
 
     HomePage homePage = new HomePage();
 
-    @Test
+    @Test(description = "Teste com endereço válido.")
+    @Description("Descrição Teste: Validar exibir endereço correto após preencher com endereço válido.")
     public void deveInformarEnderecoEscolhidoNavBar () {
 
         landingPage.preencherCampoEndereco();
@@ -31,7 +35,8 @@ public class LandingSteps extends BaseSteps{
         Assert.assertEquals("Buscar endereço e número", campoVazio);
     }
 
-    @Test
+    @Test(description = "Teste com endereço inválido.")
+    @Description("Descrição Teste: Validar preencher com endereço inválido exibe mensagem de erro.")
     public void deveRetornarMensagemErroAoInformarEnderecoInvalido() throws InterruptedException {
 
         landingPage.preencherCampoEnderecoInvalido();

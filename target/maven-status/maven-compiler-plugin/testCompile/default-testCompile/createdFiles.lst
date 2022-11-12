@@ -1,3 +1,4 @@
+br\com\ifood\steps\HomeSteps.class
 br\com\ifood\steps\LandingSteps.class
 br\com\ifood\steps\BaseSteps.class
 br\com\ifood\util\ListenerTest.class
