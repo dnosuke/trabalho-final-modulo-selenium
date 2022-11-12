@@ -75,6 +75,6 @@ public class LandingSteps extends BaseSteps{
 
         String btnBuscarEnderecoDisabled = landingPage.verificarBtnEstaDesabilitado();
 
-        Assert.assertEquals("true", btnBuscarEnderecoDisabled);
+        Assert.assertEquals(btnBuscarEnderecoDisabled, "true");
     }
 }

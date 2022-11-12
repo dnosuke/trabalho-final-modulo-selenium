@@ -1,9 +1,8 @@
 package br.com.ifood.steps;
 
 import br.com.ifood.pages.HomePage;
-import br.com.ifood.pages.LandingPage;
 import br.com.ifood.pages.NavbarPage;
-import org.checkerframework.checker.units.qual.A;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +21,7 @@ public class NavbarSteps extends BaseSteps{
 
         String produtoBuscado = "cerveja";
         navbarPage.preencherCampoBuscar(produtoBuscado);
-        navbarPage.pressionarTeclaEnter();
+        navbarPage.pressionarTeclaEnterCampoEnter();
 
         String ulrAtual = driver.getCurrentUrl();
 
@@ -36,7 +35,7 @@ public class NavbarSteps extends BaseSteps{
 
         String produtoInexistente = "nenhumproduto";
         navbarPage.preencherCampoBuscar(produtoInexistente);
-        navbarPage.pressionarTeclaEnter();
+        navbarPage.pressionarTeclaEnterCampoEnter();
 
         String msgErro = navbarPage.buscarCampoMsgErroBuscaProduto();
 
@@ -49,15 +48,64 @@ public class NavbarSteps extends BaseSteps{
 
         homePage.entrarPaginaHome();
         navbarPage.preencherCampoBuscar("Cerveja");
-        navbarPage.pressionarTeclaEnter();
+        navbarPage.pressionarTeclaEnterCampoEnter();
         navbarPage.clicarBtnBuscarPorItem();
-        String nomeProduto = navbarPage.buscarNomePrimeiroItemDaLista();
         navbarPage.clicarNoPrimeiroItemDaLista();
         navbarPage.clicarAdicionarAoCarrinho();
         navbarPage.clicarBotaoFecharModalProduto();
         navbarPage.clicarBtnCarrinho();
-        String nomeProdutoCarrinho = navbarPage.buscarPrimeiroItemListaCarrinho();
+        Boolean msgError = navbarPage.verificarMsgCarrinhoVazioEstaPresente();
 
-        Assert.assertEquals(nomeProdutoCarrinho, "1x "+nomeProduto);
+        Assert.assertFalse(msgError);
+    }
+
+    @Test
+    public void testeDeveInformarQueOCarrinhoEstaVazio() {
+
+        homePage.entrarPaginaHome();
+        navbarPage.clicarBtnCarrinho();
+        String msgErro = navbarPage.buscarMesnagemCarrinhoVazio();
+
+        Assert.assertEquals("Sua sacola está vazia", msgErro);
+    }
+
+    @Test
+    public void testeDeveInformarErroCasoDigiteCupomInvalido() throws InterruptedException {
+
+        homePage.entrarPaginaHome();
+
+        navbarPage.preencherCampoBuscar("Cerveja");
+        navbarPage.pressionarTeclaEnterCampoEnter();
+        navbarPage.clicarBtnBuscarPorItem();
+        navbarPage.clicarNoPrimeiroItemDaLista();
+        navbarPage.clicarAdicionarAoCarrinho();
+        navbarPage.clicarBotaoFecharModalProduto();
+        navbarPage.clicarBtnCarrinho();
+        navbarPage.clicarBtnCupom();
+        navbarPage.preencherCampoCupom("AAAA");
+        navbarPage.clicarBtnAdicionarCupom();
+        Thread.sleep(1000);
+        String msgErro = navbarPage.buscarMsgToastCupom();
+
+        Assert.assertEquals(msgErro, "Cupom inválido.");
+    }
+
+    @Test
+    public void testeDeveRemoverProdutoDoCarrinhoComSucesso() {
+
+        homePage.entrarPaginaHome();
+
+        navbarPage.preencherCampoBuscar("Cerveja");
+        navbarPage.pressionarTeclaEnterCampoEnter();
+        navbarPage.clicarBtnBuscarPorItem();
+        navbarPage.clicarNoPrimeiroItemDaLista();
+        navbarPage.clicarAdicionarAoCarrinho();
+        navbarPage.clicarBotaoFecharModalProduto();
+        navbarPage.clicarBtnCarrinho();
+        navbarPage.clicarBtnRemoverProdutoCarrinho();
+
+        Boolean msgError = navbarPage.verificarMsgCarrinhoVazioEstaPresente();
+
+        Assert.assertTrue(msgError);
     }
 }

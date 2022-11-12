@@ -9,6 +9,7 @@
             <class name="br.com.ifood.steps.BaseSteps" />
             <class name="br.com.ifood.steps.LandingSteps" />
             <class name="br.com.ifood.steps.HomeSteps" />
+            <class name="br.com.ifood.steps.NavbarSteps" />
         </classes>
     </test>
 </suite>

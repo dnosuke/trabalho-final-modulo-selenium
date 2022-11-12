@@ -17,11 +17,9 @@ public class ListenerTest implements ITestListener {
     @Override
     public void onTestStart(ITestResult Result) {
 
-
     }
     @Override
     public void onTestSuccess(ITestResult Result) {
-
 
     }
     @Override

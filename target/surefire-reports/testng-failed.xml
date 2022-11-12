@@ -10,17 +10,21 @@
         <methods>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
-          <include name="deveInformarEnderecoEscolhidoNavBar"/>
+          <include name="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido"/>
         </methods>
       </class> <!-- br.com.ifood.steps.LandingSteps -->
+      <class name="br.com.ifood.steps.NavbarSteps">
+        <methods>
+          <include name="testeDeveAdicionarItemAoCarrinho"/>
+          <include name="abrirNavegador"/>
+          <include name="fecharNavegador"/>
+        </methods>
+      </class> <!-- br.com.ifood.steps.NavbarSteps -->
       <class name="br.com.ifood.steps.HomeSteps">
         <methods>
-          <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
-          <include name="testeVerficarQuartoBannerEstaAtivo"/>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
           <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
-          <include name="testeVerificarImagemTrocaDeTamanho"/>
         </methods>
       </class> <!-- br.com.ifood.steps.HomeSteps -->
     </classes>
