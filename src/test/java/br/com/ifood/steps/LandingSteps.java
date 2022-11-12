@@ -4,8 +4,6 @@ import br.com.ifood.pages.HomePage;
 import br.com.ifood.pages.LandingPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Step;
-import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -55,7 +53,6 @@ public class LandingSteps extends BaseSteps{
         String msg = landingPage.buscarCampoErrorEnderecoSemNumero();
 
         Assert.assertEquals("Você não informou o número de endereço", msg);
-
     }
 
     @Test(description = "Teste botão 'salvar endereço' desabilitado.")
@@ -72,7 +69,7 @@ public class LandingSteps extends BaseSteps{
 
     @Test(description = "Teste preencher número de endereço com valor inválido.")
     @Description("Descrição Teste: Validar preencher com número de endereço inválido mantém botão 'salvar endereço' desabilitado.")
-    public void deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero() {
+    public void deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido() {
 
         landingPage.preencherEnderecoSemNumero();
         landingPage.clicarPrimeiroItemDaLista();
