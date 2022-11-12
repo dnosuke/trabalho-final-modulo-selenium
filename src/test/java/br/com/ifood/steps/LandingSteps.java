@@ -45,7 +45,8 @@ public class LandingSteps extends BaseSteps{
     }
 
 
-    @Test
+    @Test(description = "Teste com endereço sem informar número.")
+    @Description("Descrição Teste: Validar preencher com endereço sem o número do endereço exibe mensagem 'Você não informou o número de endereço'.")
     public void devePedirNumeroDoEnderecoCasoNaoSejaInformado() {
 
         landingPage.preencherEnderecoSemNumero();
@@ -56,7 +57,8 @@ public class LandingSteps extends BaseSteps{
 
     }
 
-    @Test
+    @Test(description = "Teste botão 'salvar endereço' desabilitado.")
+    @Description("Descrição Teste: Validar botão 'salvar endereço' desabilitado ao não preencher campo com número de endereço.")
     public void deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado() {
 
         landingPage.preencherEnderecoSemNumero();
@@ -67,7 +69,8 @@ public class LandingSteps extends BaseSteps{
         Assert.assertEquals("true", btnBuscarEnderecoDisabled);
     }
 
-    @Test
+    @Test(description = "Teste preencher número de endereço com valor inválido.")
+    @Description("Descrição Teste: Validar preencher com número de endereço inválido mantém botão 'salvar endereço' desabilitado.")
     public void deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero() {
 
         landingPage.preencherEnderecoSemNumero();

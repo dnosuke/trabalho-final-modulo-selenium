@@ -4,6 +4,7 @@ br\com\ifood\steps\BaseSteps.class
 br\com\ifood\util\ListenerTest.class
 br\com\ifood\util\Browser.class
 br\com\ifood\pages\LandingPage.class
+br\com\ifood\pages\NavbarPage.class
 br\com\ifood\pages\BasePage.class
 br\com\ifood\util\Elements.class
 br\com\ifood\pages\HomePage.class

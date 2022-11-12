@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" ignored="0" total="7" passed="2">
+<testng-results skipped="0" failed="5" ignored="0" total="10" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero.jpg' height='100' width='100'/> </a>]]>
+    </line>
     <line>
       <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg' height='100' width='100'/> </a>]]>
     </line>
     <line>
       <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerficarQuartoBannerEstaAtivo.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerficarQuartoBannerEstaAtivo.jpg' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg' height='100' width='100'/> </a>]]>
     </line>
     <line>
       <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg' height='100' width='100'/> </a>]]>
@@ -17,38 +17,38 @@
       <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg' height='100' width='100'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="64807" started-at="2022-11-12T09:59:08 BRT" finished-at="2022-11-12T10:00:13 BRT">
+  <suite name="Suite" duration-ms="101681" started-at="2022-11-12T13:27:03 BRT" finished-at="2022-11-12T13:28:44 BRT">
     <groups>
     </groups>
-    <test name="User Tests" duration-ms="64807" started-at="2022-11-12T09:59:08 BRT" finished-at="2022-11-12T10:00:13 BRT">
+    <test name="User Tests" duration-ms="101681" started-at="2022-11-12T13:27:03 BRT" finished-at="2022-11-12T13:28:44 BRT">
       <class name="br.com.ifood.steps.HomeSteps">
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="abrirNavegador" is-config="true" duration-ms="3683" started-at="2022-11-12T09:59:27 BRT" finished-at="2022-11-12T09:59:31 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="abrirNavegador" is-config="true" duration-ms="2997" started-at="2022-11-12T13:27:56 BRT" finished-at="2022-11-12T13:27:59 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="testeVerficarQuartoBannerEstaAtivo()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="testeVerficarQuartoBannerEstaAtivo" duration-ms="7720" started-at="2022-11-12T09:59:31 BRT" finished-at="2022-11-12T09:59:39 BRT">
+        <test-method status="FAIL" signature="testeVerficarQuartoBannerEstaAtivo()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="testeVerficarQuartoBannerEstaAtivo" duration-ms="9039" started-at="2022-11-12T13:27:59 BRT" finished-at="2022-11-12T13:28:08 BRT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next"}
-  (Session info: chrome=107.0.5304.107)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active"}
+  (Session info: headless chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df32d70fe114d096ebbaa661aedd961, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59207/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0df32d70fe114d096ebbaa661aedd961]]>
+Command: [31b58417f581d7e0a46ad073f4a89faf, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58327/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31b58417f581d7e0a46ad073f4a89faf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next"}
-  (Session info: chrome=107.0.5304.107)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active"}
+  (Session info: headless chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df32d70fe114d096ebbaa661aedd961, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59207/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0df32d70fe114d096ebbaa661aedd961
+Command: [31b58417f581d7e0a46ad073f4a89faf, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58327/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31b58417f581d7e0a46ad073f4a89faf
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,8 +65,8 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:6
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
 at br.com.ifood.util.Elements.element(Elements.java:12)
-at br.com.ifood.pages.HomePage.mudarParaQuartoElementoCarrosselBanner(HomePage.java:99)
-at br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo(HomeSteps.java:26)
+at br.com.ifood.pages.HomePage.verificarClasseQuartoBanner(HomePage.java:105)
+at br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo(HomeSteps.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,207 +108,39 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- testeVerficarQuartoBannerEstaAtivo -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="fecharNavegador" is-config="true" duration-ms="804" started-at="2022-11-12T09:59:39 BRT" finished-at="2022-11-12T09:59:40 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="fecharNavegador" is-config="true" duration-ms="745" started-at="2022-11-12T13:28:09 BRT" finished-at="2022-11-12T13:28:09 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="abrirNavegador" is-config="true" duration-ms="3856" started-at="2022-11-12T09:59:40 BRT" finished-at="2022-11-12T09:59:44 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="abrirNavegador" is-config="true" duration-ms="7548" started-at="2022-11-12T13:28:09 BRT" finished-at="2022-11-12T13:28:17 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="testeVerificarBotaoSwipeDisabledCasoAListaAcabe()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe" duration-ms="7445" started-at="2022-11-12T09:59:44 BRT" finished-at="2022-11-12T09:59:51 BRT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-prev"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [080297e32543f274575e5c9597eebe25, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-prev}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59265/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 080297e32543f274575e5c9597eebe25]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-prev"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [080297e32543f274575e5c9597eebe25, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-prev}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59265/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 080297e32543f274575e5c9597eebe25
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at br.com.ifood.util.Elements.element(Elements.java:12)
-at br.com.ifood.pages.HomePage.retonarEstadoBotaoEsquerdo(HomePage.java:66)
-at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="testeVerificarBotaoSwipeDisabledCasoAListaAcabe()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe" duration-ms="4776" started-at="2022-11-12T13:28:17 BRT" finished-at="2022-11-12T13:28:22 BRT">
           <reporter-output>
-            <line>
-              <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg' height='100' width='100'/> </a>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testeVerificarBotaoSwipeDisabledCasoAListaAcabe -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="fecharNavegador" is-config="true" duration-ms="785" started-at="2022-11-12T09:59:51 BRT" finished-at="2022-11-12T09:59:52 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="fecharNavegador" is-config="true" duration-ms="611" started-at="2022-11-12T13:28:22 BRT" finished-at="2022-11-12T13:28:22 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="abrirNavegador" is-config="true" duration-ms="3406" started-at="2022-11-12T09:59:52 BRT" finished-at="2022-11-12T09:59:55 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="abrirNavegador" is-config="true" duration-ms="7349" started-at="2022-11-12T13:28:22 BRT" finished-at="2022-11-12T13:28:30 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="testeVerificarImagemTrocaDeTamanho()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="testeVerificarImagemTrocaDeTamanho" duration-ms="7601" started-at="2022-11-12T09:59:55 BRT" finished-at="2022-11-12T10:00:03 BRT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active > li > a > span > img"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09b535bef3e44906069883b673090e86, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active > li > a > span > img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59320}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59320/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 09b535bef3e44906069883b673090e86]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active > li > a > span > img"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09b535bef3e44906069883b673090e86, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active > li > a > span > img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59320}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59320/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 09b535bef3e44906069883b673090e86
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at br.com.ifood.util.Elements.element(Elements.java:12)
-at br.com.ifood.pages.HomePage.hoverBigBannerImage(HomePage.java:84)
-at br.com.ifood.steps.HomeSteps.testeVerificarImagemTrocaDeTamanho(HomeSteps.java:17)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg' height='100' width='100'/> </a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testeVerificarImagemTrocaDeTamanho -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="fecharNavegador" is-config="true" duration-ms="767" started-at="2022-11-12T10:00:03 BRT" finished-at="2022-11-12T10:00:04 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="abrirNavegador" is-config="true" duration-ms="3423" started-at="2022-11-12T10:00:04 BRT" finished-at="2022-11-12T10:00:07 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="testeVerificarSeListaAumentaAoClicarVerMais()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="testeVerificarSeListaAumentaAoClicarVerMais" duration-ms="4665" started-at="2022-11-12T10:00:07 BRT" finished-at="2022-11-12T10:00:12 BRT">
+        <test-method status="FAIL" signature="testeVerificarImagemTrocaDeTamanho()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="testeVerificarImagemTrocaDeTamanho" duration-ms="5382" started-at="2022-11-12T13:28:30 BRT" finished-at="2022-11-12T13:28:35 BRT">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[did not expect [20] but found [20]]]>
+              <![CDATA[did not expect [none] but found [none]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect [20] but found [20]
+              <![CDATA[java.lang.AssertionError: did not expect [none] but found [none]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failEquals(Assert.java:1041)
 at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
 at org.testng.Assert.assertNotEquals(Assert.java:1531)
 at org.testng.Assert.assertNotEquals(Assert.java:1535)
-at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:52)
+at br.com.ifood.steps.HomeSteps.testeVerificarImagemTrocaDeTamanho(HomeSteps.java:19)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -346,30 +178,191 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
+              <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarImagemTrocaDeTamanho.jpg' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testeVerificarImagemTrocaDeTamanho -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="fecharNavegador" is-config="true" duration-ms="608" started-at="2022-11-12T13:28:35 BRT" finished-at="2022-11-12T13:28:36 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="abrirNavegador" is-config="true" duration-ms="2964" started-at="2022-11-12T13:28:36 BRT" finished-at="2022-11-12T13:28:39 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="FAIL" signature="testeVerificarSeListaAumentaAoClicarVerMais()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="testeVerificarSeListaAumentaAoClicarVerMais" duration-ms="4937" started-at="2022-11-12T13:28:39 BRT" finished-at="2022-11-12T13:28:44 BRT">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" role="button" class="btn btn--default btn--white btn--size-m btn--full-width cardstack-nextcontent__button" aria-label="..." color="white" variant="cardstack-nextcontent__button" theme="default" target="" rel="">Ver mais</button> is not clickable at point (391, 575). Other element would receive the click: <div class="tab-bar">...</div>
+  (Session info: headless chrome=107.0.5304.107)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [860f6408c52e82aa9bc2283ea666c866, clickElement {id=824b7d35-2e3f-4904-ad95-938269e73352}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58492/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (860f6408c52e82aa9bc2283ea666c866)] -> css selector: #__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(2) > div > button]
+Session ID: 860f6408c52e82aa9bc2283ea666c866]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" role="button" class="btn btn--default btn--white btn--size-m btn--full-width cardstack-nextcontent__button" aria-label="..." color="white" variant="cardstack-nextcontent__button" theme="default" target="" rel="">Ver mais</button> is not clickable at point (391, 575). Other element would receive the click: <div class="tab-bar">...</div>
+  (Session info: headless chrome=107.0.5304.107)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'C3PO', ip: '192.168.100.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [860f6408c52e82aa9bc2283ea666c866, clickElement {id=824b7d35-2e3f-4904-ad95-938269e73352}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58492/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (860f6408c52e82aa9bc2283ea666c866)] -> css selector: #__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(2) > div > button]
+Session ID: 860f6408c52e82aa9bc2283ea666c866
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at br.com.ifood.pages.BasePage.click(BasePage.java:11)
+at br.com.ifood.pages.HomePage.clicarBtnVerMais(HomePage.java:53)
+at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
               <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testeVerificarSeListaAumentaAoClicarVerMais -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@54a3ab8f]" name="fecharNavegador" is-config="true" duration-ms="709" started-at="2022-11-12T10:00:12 BRT" finished-at="2022-11-12T10:00:13 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@6034e75d]" name="fecharNavegador" is-config="true" duration-ms="701" started-at="2022-11-12T13:28:44 BRT" finished-at="2022-11-12T13:28:44 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
       </class> <!-- br.com.ifood.steps.HomeSteps -->
       <class name="br.com.ifood.steps.LandingSteps">
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="abrirNavegador" is-config="true" duration-ms="5551" started-at="2022-11-12T09:59:08 BRT" finished-at="2022-11-12T09:59:14 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="7342" started-at="2022-11-12T13:27:03 BRT" finished-at="2022-11-12T13:27:10 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="deveInformarEnderecoEscolhidoNavBar()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="deveInformarEnderecoEscolhidoNavBar" duration-ms="2848" started-at="2022-11-12T09:59:14 BRT" description="Teste campo endereço com endereço válido." finished-at="2022-11-12T09:59:17 BRT">
+        <test-method status="PASS" signature="deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado" duration-ms="2365" started-at="2022-11-12T13:27:10 BRT" description="Teste botão &#039;salvar endereço&#039; desabilitado." finished-at="2022-11-12T13:27:13 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="674" started-at="2022-11-12T13:27:13 BRT" finished-at="2022-11-12T13:27:13 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="7452" started-at="2022-11-12T13:27:13 BRT" finished-at="2022-11-12T13:27:21 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="FAIL" signature="deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero" duration-ms="3109" started-at="2022-11-12T13:27:21 BRT" description="Teste preencher número de endereço com valor inválido." finished-at="2022-11-12T13:27:24 BRT">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [R. Prof. Geraldo Rosa,
-588] but found [R. Uberlândia,
+              <![CDATA[expected [null] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at br.com.ifood.steps.LandingSteps.deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero(LandingSteps.java:82)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero.jpg' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deveExiberMensagemErroCasoUsuarioInformeLetrasNoCampoNumero -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="600" started-at="2022-11-12T13:27:24 BRT" finished-at="2022-11-12T13:27:25 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="6715" started-at="2022-11-12T13:27:25 BRT" finished-at="2022-11-12T13:27:31 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="FAIL" signature="deveInformarEnderecoEscolhidoNavBar()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="deveInformarEnderecoEscolhidoNavBar" duration-ms="2614" started-at="2022-11-12T13:27:31 BRT" description="Teste com endereço válido." finished-at="2022-11-12T13:27:34 BRT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [R. Uberlândia,
 588]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [R. Prof. Geraldo Rosa,
-588] but found [R. Uberlândia,
+              <![CDATA[java.lang.AssertionError: expected [] but found [R. Uberlândia,
 588]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -419,31 +412,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- deveInformarEnderecoEscolhidoNavBar -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="fecharNavegador" is-config="true" duration-ms="714" started-at="2022-11-12T09:59:17 BRT" finished-at="2022-11-12T09:59:18 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="594" started-at="2022-11-12T13:27:34 BRT" finished-at="2022-11-12T13:27:35 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="abrirNavegador" is-config="true" duration-ms="3268" started-at="2022-11-12T09:59:18 BRT" finished-at="2022-11-12T09:59:21 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="2863" started-at="2022-11-12T13:27:35 BRT" finished-at="2022-11-12T13:27:38 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio" duration-ms="39" started-at="2022-11-12T09:59:21 BRT" finished-at="2022-11-12T09:59:21 BRT">
+        <test-method status="PASS" signature="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio" duration-ms="30" started-at="2022-11-12T13:27:38 BRT" finished-at="2022-11-12T13:27:38 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="fecharNavegador" is-config="true" duration-ms="642" started-at="2022-11-12T09:59:21 BRT" finished-at="2022-11-12T09:59:22 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="572" started-at="2022-11-12T13:27:38 BRT" finished-at="2022-11-12T13:27:38 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="abrirNavegador" is-config="true" duration-ms="3255" started-at="2022-11-12T09:59:22 BRT" finished-at="2022-11-12T09:59:25 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="6764" started-at="2022-11-12T13:27:38 BRT" finished-at="2022-11-12T13:27:45 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="deveRetornarMensagemErroAoInformarEnderecoInvalido()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="deveRetornarMensagemErroAoInformarEnderecoInvalido" duration-ms="1408" started-at="2022-11-12T09:59:25 BRT" finished-at="2022-11-12T09:59:27 BRT">
+        <test-method status="PASS" signature="devePedirNumeroDoEnderecoCasoNaoSejaInformado()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="devePedirNumeroDoEnderecoCasoNaoSejaInformado" duration-ms="1983" started-at="2022-11-12T13:27:45 BRT" description="Teste com endereço sem informar número." finished-at="2022-11-12T13:27:47 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- devePedirNumeroDoEnderecoCasoNaoSejaInformado -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="594" started-at="2022-11-12T13:27:47 BRT" finished-at="2022-11-12T13:27:48 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="abrirNavegador" is-config="true" duration-ms="6886" started-at="2022-11-12T13:27:48 BRT" finished-at="2022-11-12T13:27:54 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="PASS" signature="deveRetornarMensagemErroAoInformarEnderecoInvalido()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="deveRetornarMensagemErroAoInformarEnderecoInvalido" duration-ms="1426" started-at="2022-11-12T13:27:54 BRT" description="Teste com endereço inválido." finished-at="2022-11-12T13:27:56 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveRetornarMensagemErroAoInformarEnderecoInvalido -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@78e16155]" name="fecharNavegador" is-config="true" duration-ms="673" started-at="2022-11-12T09:59:27 BRT" finished-at="2022-11-12T09:59:27 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@654b72c0]" name="fecharNavegador" is-config="true" duration-ms="592" started-at="2022-11-12T13:27:56 BRT" finished-at="2022-11-12T13:27:56 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
