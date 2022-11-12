@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
     <line>
-      <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\teste.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\teste.jpg' height='100' width='100'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="19521" started-at="2022-11-11T19:19:32 BRT" finished-at="2022-11-11T19:19:51 BRT">
+  <suite name="Suite" duration-ms="82024" started-at="2022-11-11T22:26:50 GMT-03:00" finished-at="2022-11-11T22:28:13 GMT-03:00">
     <groups>
     </groups>
-    <test name="User Tests" duration-ms="19521" started-at="2022-11-11T19:19:32 BRT" finished-at="2022-11-11T19:19:51 BRT">
-      <class name="br.com.ifood.steps.LandingSteps">
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="abrirNavegador" is-config="true" duration-ms="6018" started-at="2022-11-11T19:19:32 BRT" finished-at="2022-11-11T19:19:38 BRT">
+    <test name="User Tests" duration-ms="82024" started-at="2022-11-11T22:26:50 GMT-03:00" finished-at="2022-11-11T22:28:13 GMT-03:00">
+      <class name="br.com.ifood.steps.HomeSteps">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="abrirNavegador" is-config="true" duration-ms="5465" started-at="2022-11-11T22:27:20 GMT-03:00" finished-at="2022-11-11T22:27:25 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="FAIL" signature="deveInformarEnderecoEscolhidoNavBar()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="deveInformarEnderecoEscolhidoNavBar" duration-ms="3014" started-at="2022-11-11T19:19:38 BRT" finished-at="2022-11-11T19:19:41 BRT">
+        <test-method status="FAIL" signature="teste()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="teste" duration-ms="6641" started-at="2022-11-11T22:27:25 GMT-03:00" finished-at="2022-11-11T22:27:32 GMT-03:00">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [R. Prof. Geraldo Rosa,
-588] but found [R. Uberlândia,
-588]]]>
+              <![CDATA[did not expect [20] but found [20]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [R. Prof. Geraldo Rosa,
-588] but found [R. Uberlândia,
-588]
+              <![CDATA[java.lang.AssertionError: did not expect [20] but found [20]
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:22)
+at org.testng.Assert.failEquals(Assert.java:1041)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+at org.testng.Assert.assertNotEquals(Assert.java:1531)
+at org.testng.Assert.assertNotEquals(Assert.java:1535)
+at br.com.ifood.steps.HomeSteps.teste(HomeSteps.java:52)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,35 +64,85 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\teste.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\teste.jpg' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- deveInformarEnderecoEscolhidoNavBar -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="fecharNavegador" is-config="true" duration-ms="820" started-at="2022-11-11T19:19:41 BRT" finished-at="2022-11-11T19:19:42 BRT">
+        </test-method> <!-- teste -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="fecharNavegador" is-config="true" duration-ms="1133" started-at="2022-11-11T22:27:32 GMT-03:00" finished-at="2022-11-11T22:27:33 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="abrirNavegador" is-config="true" duration-ms="3154" started-at="2022-11-11T19:19:42 BRT" finished-at="2022-11-11T19:19:45 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="abrirNavegador" is-config="true" duration-ms="4745" started-at="2022-11-11T22:27:33 GMT-03:00" finished-at="2022-11-11T22:27:38 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio" duration-ms="46" started-at="2022-11-11T19:19:45 BRT" finished-at="2022-11-11T19:19:45 BRT">
+        <test-method status="PASS" signature="testeVerficarQuartoBannerEstaAtivo()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="testeVerficarQuartoBannerEstaAtivo" duration-ms="6830" started-at="2022-11-11T22:27:38 GMT-03:00" finished-at="2022-11-11T22:27:45 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeVerficarQuartoBannerEstaAtivo -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="fecharNavegador" is-config="true" duration-ms="950" started-at="2022-11-11T22:27:45 GMT-03:00" finished-at="2022-11-11T22:27:46 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="abrirNavegador" is-config="true" duration-ms="5322" started-at="2022-11-11T22:27:46 GMT-03:00" finished-at="2022-11-11T22:27:51 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="PASS" signature="testeVerificarBotaoSwipeDisabledCasoAListaAcabe()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe" duration-ms="7258" started-at="2022-11-11T22:27:51 GMT-03:00" finished-at="2022-11-11T22:27:58 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeVerificarBotaoSwipeDisabledCasoAListaAcabe -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="fecharNavegador" is-config="true" duration-ms="1584" started-at="2022-11-11T22:27:58 GMT-03:00" finished-at="2022-11-11T22:28:00 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="abrirNavegador" is-config="true" duration-ms="4801" started-at="2022-11-11T22:28:00 GMT-03:00" finished-at="2022-11-11T22:28:05 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="PASS" signature="testeVerificarImagemTrocaDeTamanho()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="testeVerificarImagemTrocaDeTamanho" duration-ms="6355" started-at="2022-11-11T22:28:05 GMT-03:00" finished-at="2022-11-11T22:28:11 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeVerificarImagemTrocaDeTamanho -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.HomeSteps@407cf41]" name="fecharNavegador" is-config="true" duration-ms="1307" started-at="2022-11-11T22:28:11 GMT-03:00" finished-at="2022-11-11T22:28:13 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.ifood.steps.HomeSteps -->
+      <class name="br.com.ifood.steps.LandingSteps">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="abrirNavegador" is-config="true" duration-ms="9779" started-at="2022-11-11T22:26:51 GMT-03:00" finished-at="2022-11-11T22:27:00 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="PASS" signature="deveInformarEnderecoEscolhidoNavBar()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="deveInformarEnderecoEscolhidoNavBar" duration-ms="3877" started-at="2022-11-11T22:27:01 GMT-03:00" finished-at="2022-11-11T22:27:05 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveInformarEnderecoEscolhidoNavBar -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="fecharNavegador" is-config="true" duration-ms="1127" started-at="2022-11-11T22:27:05 GMT-03:00" finished-at="2022-11-11T22:27:06 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="abrirNavegador" is-config="true" duration-ms="5107" started-at="2022-11-11T22:27:06 GMT-03:00" finished-at="2022-11-11T22:27:11 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirNavegador -->
+        <test-method status="PASS" signature="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio" duration-ms="148" started-at="2022-11-11T22:27:11 GMT-03:00" finished-at="2022-11-11T22:27:11 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="fecharNavegador" is-config="true" duration-ms="673" started-at="2022-11-11T19:19:45 BRT" finished-at="2022-11-11T19:19:46 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="fecharNavegador" is-config="true" duration-ms="1066" started-at="2022-11-11T22:27:11 GMT-03:00" finished-at="2022-11-11T22:27:12 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="abrirNavegador" is-config="true" duration-ms="3167" started-at="2022-11-11T19:19:46 BRT" finished-at="2022-11-11T19:19:49 BRT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="abrirNavegador" is-config="true" duration-ms="4629" started-at="2022-11-11T22:27:12 GMT-03:00" finished-at="2022-11-11T22:27:17 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="deveRetornarMensagemErroAoInformarEnderecoInvalido()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="deveRetornarMensagemErroAoInformarEnderecoInvalido" duration-ms="1395" started-at="2022-11-11T19:19:49 BRT" finished-at="2022-11-11T19:19:50 BRT">
+        <test-method status="PASS" signature="deveRetornarMensagemErroAoInformarEnderecoInvalido()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="deveRetornarMensagemErroAoInformarEnderecoInvalido" duration-ms="1823" started-at="2022-11-11T22:27:17 GMT-03:00" finished-at="2022-11-11T22:27:19 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveRetornarMensagemErroAoInformarEnderecoInvalido -->
-        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@740abb5]" name="fecharNavegador" is-config="true" duration-ms="687" started-at="2022-11-11T19:19:50 BRT" finished-at="2022-11-11T19:19:51 BRT">
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.ifood.steps.LandingSteps@5f7f2382]" name="fecharNavegador" is-config="true" duration-ms="892" started-at="2022-11-11T22:27:19 GMT-03:00" finished-at="2022-11-11T22:27:20 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharNavegador -->

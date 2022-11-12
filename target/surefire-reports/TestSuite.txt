@@ -1,11 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.061 s <<< FAILURE! - in TestSuite
-br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 3.009 s  <<< FAILURE!
-java.lang.AssertionError: 
-expected [R. Prof. Geraldo Rosa,
-588] but found [R. Uberlândia,
-588]
-	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:22)
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.931 s <<< FAILURE! - in TestSuite
+br.com.ifood.steps.HomeSteps.teste  Time elapsed: 6.642 s  <<< FAILURE!
+java.lang.AssertionError: did not expect [20] but found [20]
+	at br.com.ifood.steps.HomeSteps.teste(HomeSteps.java:52)
 
