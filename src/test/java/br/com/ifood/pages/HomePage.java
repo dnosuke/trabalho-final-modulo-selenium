@@ -1,5 +1,6 @@
 package br.com.ifood.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -33,12 +34,13 @@ public class HomePage extends BasePage {
     private static final By listaDeProdutos =
             By.cssSelector("#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(1) > div > div.merchant-list-v2__wrapper");
 
-    private static final By cardLojaHome =
+            private static final By cardLojaHome =
             By.cssSelector("#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(3) > section:nth-child(1) > div > div.merchant-list-v2__wrapper > div:nth-child(2) > a > div > div.merchant-v2__figure-container");
-
-    private static final By tituloLoja =
+            
+            private static final By tituloLoja =
             By.cssSelector("#__next > div:nth-child(1) > main > div.restaurant-container > div > header.merchant-info > div.merchant-info__content-container > div > div.merchant-info__title-container > h1");
-
+            
+    @Step("Acesso página Home.")
     public void entrarPaginaHome() {
 
         landingPage.preencherCampoEndereco();
@@ -51,7 +53,7 @@ public class HomePage extends BasePage {
 
         return getText(campoEndereco);
     }
-
+    @Step("Cliclar no botão 'Ver mais'.")
     public void clicarBtnVerMais() {
 
         click(btnVerMais);

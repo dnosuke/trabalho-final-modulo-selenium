@@ -2,6 +2,7 @@ package br.com.ifood.steps;
 
 import br.com.ifood.pages.HomePage;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,8 @@ public class HomeSteps extends BaseSteps {
         Assert.assertEquals("swiper-button-next swiper-button-disabled", homePage.retonarEstadoBotaoDireito());
     }
 
-    @Test
+    @Test(description = "Teste clicar botão 'Ver mais' da lista Lojas.")
+    @Description("Descrição Teste: Validar clicar no botão 'Ver mais' carrega mais itens a lista de Lojas na home.")
     public void testeVerificarSeListaAumentaAoClicarVerMais() {
 
         homePage.entrarPaginaHome();

@@ -57,7 +57,7 @@ public class LandingPage extends BasePage{
 
         return getText(mensagemErroEnderecoInvalido);
     }
-
+    @Step("Cliclar primeiro item da lista de busca.")
     public void clicarPrimeiroItemDaLista() {
 
         click(primeiroEnderecoLista);
@@ -77,7 +77,7 @@ public class LandingPage extends BasePage{
 
         return element(campoEnderecoInicio).getAttribute("aria-label");
     }
-
+    @Step("Preencher campo com endereço sem numero.")
     public void preencherEnderecoSemNumero() {
 
         sendKeys(campoEnderecoInicio, "Rua Rua Uberlandia");
@@ -92,7 +92,7 @@ public class LandingPage extends BasePage{
 
         return element(btnBuscarComNumero).getAttribute("disabled");
     }
-
+    @Step("Preencher campo numero com letras.")
    public void preencherCampoNumeroComLetras() {
 
         sendKeys(campoPreencherNumero, "AAAA");

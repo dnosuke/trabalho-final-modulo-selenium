@@ -1,16 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 217.147 s <<< FAILURE! - in TestSuite
-br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido  Time elapsed: 2.767 s  <<< FAILURE!
-java.lang.AssertionError: expected [null] but found [true]
-	at br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido(LandingSteps.java:78)
+Tests run: 17, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 258.679 s <<< FAILURE! - in TestSuite
+br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido  Time elapsed: 2.965 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [null]
+	at br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido(LandingSteps.java:80)
 
-br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 6.663 s  <<< FAILURE!
+br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe  Time elapsed: 12.586 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DBC-000564', ip: '192.168.100.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d0df0c4e9bfc3932f1d06af013302c0, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\RAWAD~1.YEH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52906/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
+	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:41)
+
+br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 6.678 s  <<< FAILURE!
 java.lang.AssertionError: did not expect [20] but found [20]
-	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:52)
+	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:54)
 
-br.com.ifood.steps.NavbarSteps.testeDeveAdicionarItemAoCarrinho  Time elapsed: 24.209 s  <<< FAILURE!
-java.lang.AssertionError: expected [1x Cerveja de Trigo Hoegaarden 330ml] but found []
-	at br.com.ifood.steps.NavbarSteps.testeDeveAdicionarItemAoCarrinho(NavbarSteps.java:61)
+br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio  Time elapsed: 3.868 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Sua sacola está vazia]
+	at br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio(NavbarSteps.java:69)
+
+br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada  Time elapsed: 4.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.ifood.com.br/busca?q=cerveja] but found [https://www.ifood.com.br/inicio]
+	at br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada(NavbarSteps.java:28)
 

@@ -6,6 +6,14 @@
   </listeners>
   <test thread-count="5" verbose="0" name="User Tests(failed)">
     <classes>
+      <class name="br.com.ifood.steps.NavbarSteps">
+        <methods>
+          <include name="abrirNavegador"/>
+          <include name="fecharNavegador"/>
+          <include name="testeDeveInformarQueOCarrinhoEstaVazio"/>
+          <include name="testeListarProdutoOuLojaBuscada"/>
+        </methods>
+      </class> <!-- br.com.ifood.steps.NavbarSteps -->
       <class name="br.com.ifood.steps.LandingSteps">
         <methods>
           <include name="abrirNavegador"/>
@@ -13,15 +21,9 @@
           <include name="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido"/>
         </methods>
       </class> <!-- br.com.ifood.steps.LandingSteps -->
-      <class name="br.com.ifood.steps.NavbarSteps">
-        <methods>
-          <include name="testeDeveAdicionarItemAoCarrinho"/>
-          <include name="abrirNavegador"/>
-          <include name="fecharNavegador"/>
-        </methods>
-      </class> <!-- br.com.ifood.steps.NavbarSteps -->
       <class name="br.com.ifood.steps.HomeSteps">
         <methods>
+          <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
           <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
