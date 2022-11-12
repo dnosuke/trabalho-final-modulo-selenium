@@ -20,6 +20,19 @@ public class LandingPage extends BasePage{
 
     private static final By mensagemErroEnderecoInvalido =
             By.cssSelector("body > div:nth-child(11) > div > div > div > div > div > div:nth-child(2) > div > div.address-search-step > div.address-search-step__results > div > span");
+
+    private static final By mensagemErroNumeroNaoInformado =
+            By.cssSelector("body > div:nth-child(11) > div > div > div > div > div > div:nth-child(2) > div > div.address-number.address-number--visible > div > p");
+    private static final By btnBuscarComNumero =
+            By.cssSelector("body > div:nth-child(11) > div > div > div > div > div > div:nth-child(2) > div > div.address-number.address-number--visible > div > form > button");
+    private static final By campoPreencherNumero =
+            By.cssSelector("body > div:nth-child(11) > div > div > div > div > div > div:nth-child(2) > div > div.address-number.address-number--visible > div > form > div.address-number__input > div > label > input");
+
+    private static final By msgPreencherNumero =
+            By.cssSelector("body > div:nth-child(43) > div > div > div > div > div > div:nth-child(2) > div > div.address-number.address-number--visible > div > form > div.address-number__input > div > span");
+
+
+
     @Step("Preencher campo endereço.")
     public String preencherCampoEndereco() {
 
@@ -64,4 +77,24 @@ public class LandingPage extends BasePage{
 
         return element(campoEnderecoInicio).getAttribute("aria-label");
     }
+
+    public void preencherEnderecoSemNumero() {
+
+        sendKeys(campoEnderecoInicio, "Rua Rua Uberlandia");
+    }
+
+    public String buscarCampoErrorEnderecoSemNumero() {
+
+       return getText(mensagemErroNumeroNaoInformado);
+    }
+
+    public String verificarBtnEstaDesabilitado() {
+
+        return element(btnBuscarComNumero).getAttribute("disabled");
+    }
+
+   public void preencherCampoNumeroComLetras() {
+
+        sendKeys(campoPreencherNumero, "AAAA");
+   }
 }
