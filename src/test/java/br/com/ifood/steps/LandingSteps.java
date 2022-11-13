@@ -26,7 +26,8 @@ public class LandingSteps extends BaseSteps{
                 "588", homePage.buscarCampoEndreco());
     }
 
-    @Test
+    @Test(description = "Teste não preenche campo endereço.")
+    @Description("Descrição Teste: Validar deve informar ao usuário para preencher endereço.")
     public void deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio() {
 
         String campoVazio = landingPage.buscarCampoEndereco();

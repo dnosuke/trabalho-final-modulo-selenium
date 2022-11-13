@@ -81,7 +81,7 @@ public class HomePage extends BasePage {
     public void clicarCincoVezesBotaoDireito() {
 
         Actions action = new Actions(driver);
-        action.doubleClick(element(btnRightArrow)).doubleClick().click().perform();
+        action.doubleClick(element(btnRightArrow)).doubleClick().perform();
     }
 
     public void hoverBigBannerImage() {

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\testng.xml</span>
+                    <span>C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods, 5 failed,   12 passed</span>
+                    <span class="method-stats">17 methods, 7 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.LandingSteps" hash-for-method="deveInformarEnderecoEscolhidoNavBar">deveInformarEnderecoEscolhidoNavBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.LandingSteps" hash-for-method="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido">deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido</a> <!-- method navigator-link -->
@@ -115,6 +120,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.NavbarSteps" hash-for-method="testeListarProdutoOuLojaBuscada">testeListarProdutoOuLojaBuscada</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.HomeSteps" hash-for-method="testeVerficarQuartoBannerEstaAtivo">testeVerficarQuartoBannerEstaAtivo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,11 +149,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.LandingSteps" hash-for-method="deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado">deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.LandingSteps" hash-for-method="deveInformarEnderecoEscolhidoNavBar">deveInformarEnderecoEscolhidoNavBar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,11 +193,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.HomeSteps" hash-for-method="testeVerficarQuartoBannerEstaAtivo">testeVerficarQuartoBannerEstaAtivo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="br.com.ifood.steps.HomeSteps" hash-for-method="testeVerificarImagemTrocaDeTamanho">testeVerificarImagemTrocaDeTamanho</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -220,10 +220,12 @@
                   </a> <!-- testeDeveInformarQueOCarrinhoEstaVazio -->
                   <span class="method-name">testeDeveInformarQueOCarrinhoEstaVazio</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [] but found [Sua sacola está vazia]
-	at br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio(NavbarSteps.java:69)
+	at br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio(NavbarSteps.java:75)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 37 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Teste carrinho vazio)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -232,10 +234,12 @@
                   </a> <!-- testeListarProdutoOuLojaBuscada -->
                   <span class="method-name">testeListarProdutoOuLojaBuscada</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [https://www.ifood.com.br/busca?q=cerveja] but found [https://www.ifood.com.br/inicio]
-	at br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada(NavbarSteps.java:28)
+	at br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada(NavbarSteps.java:31)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 37 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Teste buscar produto.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,6 +250,22 @@
               <span class="class-name">br.com.ifood.steps.LandingSteps</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveInformarEnderecoEscolhidoNavBar">
+                  </a> <!-- deveInformarEnderecoEscolhidoNavBar -->
+                  <span class="method-name">deveInformarEnderecoEscolhidoNavBar</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [R. Prof. Geraldo Rosa,
+588] but found [R. Uberlândia,
+588]
+	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:25)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Teste com endereço válido.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido">
@@ -270,35 +290,72 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe">
-                  </a> <!-- testeVerificarBotaoSwipeDisabledCasoAListaAcabe -->
-                  <span class="method-name">testeVerificarBotaoSwipeDisabledCasoAListaAcabe</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-button-next&quot;}
+                  <a name="testeVerficarQuartoBannerEstaAtivo">
+                  </a> <!-- testeVerficarQuartoBannerEstaAtivo -->
+                  <span class="method-name">testeVerficarQuartoBannerEstaAtivo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-wrapper &gt; div.swiper-slide.swiper-slide-active&quot;}
   (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;DBC-000564&apos;, ip: &apos;192.168.100.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_352&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_352&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d0df0c4e9bfc3932f1d06af013302c0, findElement {using=css selector, value=#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-button-next}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\RAWAD~1.YEH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52906/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
+Command: [68308fc400d082e86f98e03a50ec39be, findElement {using=css selector, value=#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-wrapper &gt; div.swiper-slide.swiper-slide-active}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68308fc400d082e86f98e03a50ec39be
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at br.com.ifood.util.Elements.element(Elements.java:12)
-	at br.com.ifood.pages.HomePage.retonarEstadoBotaoDireito(HomePage.java:78)
-	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:41)
+	at br.com.ifood.pages.HomePage.verificarClasseQuartoBanner(HomePage.java:111)
+	at br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo(HomeSteps.java:31)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Teste troca imagem carrossel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe">
+                  </a> <!-- testeVerificarBotaoSwipeDisabledCasoAListaAcabe -->
+                  <span class="method-name">testeVerificarBotaoSwipeDisabledCasoAListaAcabe</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-button-next&quot;}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_352&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf6a9637067af828a745b5256f88442, findElement {using=css selector, value=#__next &gt; div:nth-child(1) &gt; main &gt; div &gt; div.content-container.cardstack-home &gt; section &gt; article:nth-child(1) &gt; section:nth-child(2) &gt; ul &gt; div &gt; div.swiper-button-next}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55011/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf6a9637067af828a745b5256f88442
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at br.com.ifood.util.Elements.element(Elements.java:12)
+	at br.com.ifood.pages.HomePage.retonarEstadoBotaoDireito(HomePage.java:78)
+	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Teste botão carrossel)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -307,7 +364,7 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   </a> <!-- testeVerificarSeListaAumentaAoClicarVerMais -->
                   <span class="method-name">testeVerificarSeListaAumentaAoClicarVerMais</span>
                   <div class="stack-trace">java.lang.AssertionError: did not expect [20] but found [20]
-	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:54)
+	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:57)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -328,6 +385,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeDeveAdicionarItemAoCarrinho">
                   </a> <!-- testeDeveAdicionarItemAoCarrinho -->
                   <span class="method-name">testeDeveAdicionarItemAoCarrinho</span>
+                  <em>
+(Teste adicionar produto ao carrinho)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -335,6 +394,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeDeveInformarErroCasoDigiteCupomInvalido">
                   </a> <!-- testeDeveInformarErroCasoDigiteCupomInvalido -->
                   <span class="method-name">testeDeveInformarErroCasoDigiteCupomInvalido</span>
+                  <em>
+(Teste adicionar cupom inválido)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -342,6 +403,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeDeveRemoverProdutoDoCarrinhoComSucesso">
                   </a> <!-- testeDeveRemoverProdutoDoCarrinhoComSucesso -->
                   <span class="method-name">testeDeveRemoverProdutoDoCarrinhoComSucesso</span>
+                  <em>
+(Teste remover produto)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -349,6 +412,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeDeveRetornarProdutoNaoEncontrado">
                   </a> <!-- testeDeveRetornarProdutoNaoEncontrado -->
                   <span class="method-name">testeDeveRetornarProdutoNaoEncontrado</span>
+                  <em>
+(Teste buscar produto inexistente.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -366,15 +431,6 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <span class="method-name">deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado</span>
                   <em>
 (Teste botão 'salvar endereço' desabilitado.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deveInformarEnderecoEscolhidoNavBar">
-                  </a> <!-- deveInformarEnderecoEscolhidoNavBar -->
-                  <span class="method-name">deveInformarEnderecoEscolhidoNavBar</span>
-                  <em>
-(Teste com endereço válido.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -415,13 +471,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeDeveRedirecionarParaAPaginaDaLoja">
                   </a> <!-- testeDeveRedirecionarParaAPaginaDaLoja -->
                   <span class="method-name">testeDeveRedirecionarParaAPaginaDaLoja</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testeVerficarQuartoBannerEstaAtivo">
-                  </a> <!-- testeVerficarQuartoBannerEstaAtivo -->
-                  <span class="method-name">testeVerficarQuartoBannerEstaAtivo</span>
+                  <em>
+(Teste redirecionar para página da Loja.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -429,6 +480,8 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
                   <a name="testeVerificarImagemTrocaDeTamanho">
                   </a> <!-- testeVerificarImagemTrocaDeTamanho -->
                   <span class="method-name">testeVerificarImagemTrocaDeTamanho</span>
+                  <em>
+(Teste hover imagem do carrossel)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -436,7 +489,7 @@ Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\testng.xml</span>
+            <span class="header-content">C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -493,78 +546,78 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testeDeveInformarErroCasoDigiteCupomInvalido')
+data.setCell(0, 1, 'testeDeveAdicionarItemAoCarrinho')
 data.setCell(0, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(0, 3, 26449);
+data.setCell(0, 3, 15050);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testeDeveAdicionarItemAoCarrinho')
+data.setCell(1, 1, 'testeDeveRemoverProdutoDoCarrinhoComSucesso')
 data.setCell(1, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(1, 3, 26266);
+data.setCell(1, 3, 13472);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testeDeveRemoverProdutoDoCarrinhoComSucesso')
+data.setCell(2, 1, 'testeDeveInformarErroCasoDigiteCupomInvalido')
 data.setCell(2, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(2, 3, 22188);
+data.setCell(2, 3, 13100);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testeVerificarBotaoSwipeDisabledCasoAListaAcabe')
 data.setCell(3, 2, 'br.com.ifood.steps.HomeSteps')
-data.setCell(3, 3, 12589);
+data.setCell(3, 3, 10791);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testeDeveRedirecionarParaAPaginaDaLoja')
+data.setCell(4, 1, 'testeVerficarQuartoBannerEstaAtivo')
 data.setCell(4, 2, 'br.com.ifood.steps.HomeSteps')
-data.setCell(4, 3, 7599);
+data.setCell(4, 3, 10698);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testeVerificarImagemTrocaDeTamanho')
+data.setCell(5, 1, 'testeDeveRedirecionarParaAPaginaDaLoja')
 data.setCell(5, 2, 'br.com.ifood.steps.HomeSteps')
-data.setCell(5, 3, 6897);
+data.setCell(5, 3, 6424);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testeVerficarQuartoBannerEstaAtivo')
+data.setCell(6, 1, 'testeVerificarSeListaAumentaAoClicarVerMais')
 data.setCell(6, 2, 'br.com.ifood.steps.HomeSteps')
-data.setCell(6, 3, 6877);
+data.setCell(6, 3, 5360);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testeVerificarSeListaAumentaAoClicarVerMais')
+data.setCell(7, 1, 'testeVerificarImagemTrocaDeTamanho')
 data.setCell(7, 2, 'br.com.ifood.steps.HomeSteps')
-data.setCell(7, 3, 6752);
+data.setCell(7, 3, 5351);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testeDeveRetornarProdutoNaoEncontrado')
 data.setCell(8, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(8, 3, 6274);
+data.setCell(8, 3, 3583);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'deveInformarEnderecoEscolhidoNavBar')
-data.setCell(9, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(9, 3, 4190);
+data.setCell(9, 1, 'testeDeveInformarQueOCarrinhoEstaVazio')
+data.setCell(9, 2, 'br.com.ifood.steps.NavbarSteps')
+data.setCell(9, 3, 3139);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'testeListarProdutoOuLojaBuscada')
 data.setCell(10, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(10, 3, 4006);
+data.setCell(10, 3, 2791);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testeDeveInformarQueOCarrinhoEstaVazio')
-data.setCell(11, 2, 'br.com.ifood.steps.NavbarSteps')
-data.setCell(11, 3, 3906);
+data.setCell(11, 1, 'deveInformarEnderecoEscolhidoNavBar')
+data.setCell(11, 2, 'br.com.ifood.steps.LandingSteps')
+data.setCell(11, 3, 2330);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido')
+data.setCell(12, 1, 'deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado')
 data.setCell(12, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(12, 3, 2955);
+data.setCell(12, 3, 1979);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado')
+data.setCell(13, 1, 'deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido')
 data.setCell(13, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(13, 3, 2734);
+data.setCell(13, 3, 1914);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'devePedirNumeroDoEnderecoCasoNaoSejaInformado')
 data.setCell(14, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(14, 3, 2412);
+data.setCell(14, 3, 1857);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'deveRetornarMensagemErroAoInformarEnderecoInvalido')
 data.setCell(15, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(15, 3, 1798);
+data.setCell(15, 3, 1410);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio')
 data.setCell(16, 2, 'br.com.ifood.steps.LandingSteps')
-data.setCell(16, 3, 70);
+data.setCell(16, 3, 30);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -576,33 +629,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testeDeveInformarQueOCarrinhoEstaVazio</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeDeveInformarQueOCarrinhoEstaVazio.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeDeveInformarQueOCarrinhoEstaVazio.jpg' height='100' width='100'/> </a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido.jpg' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido.jpg' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testeVerificarSeListaAumentaAoClicarVerMais</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarSeListaAumentaAoClicarVerMais.jpg' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testeVerficarQuartoBannerEstaAtivo</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerficarQuartoBannerEstaAtivo.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerficarQuartoBannerEstaAtivo.jpg' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testeVerificarBotaoSwipeDisabledCasoAListaAcabe</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeVerificarBotaoSwipeDisabledCasoAListaAcabe.jpg' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testeDeveInformarQueOCarrinhoEstaVazio</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeDeveInformarQueOCarrinhoEstaVazio.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeDeveInformarQueOCarrinhoEstaVazio.jpg' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deveInformarEnderecoEscolhidoNavBar</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\deveInformarEnderecoEscolhidoNavBar.jpg' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testeListarProdutoOuLojaBuscada</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeListarProdutoOuLojaBuscada.jpg'> <img src='C:\Users\rawad.yehia\Desktop\GIT\trabalho-final-modulo-selenium\.\ScreenShot\testeListarProdutoOuLojaBuscada.jpg' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeListarProdutoOuLojaBuscada.jpg'> <img src='C:\Users\alain\Desktop\VEMSER-QA\trabalho-final-modulo-selenium\.\ScreenShot\testeListarProdutoOuLojaBuscada.jpg' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -627,219 +692,223 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deveDesabilitarBtnSalvarEnderecoCasoNumeroNaoSejaInformado</span>
-                <span class="method-start">11747 ms</span>
+                <span class="method-start">5978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">14732 ms</span>
+                <span class="method-start">7975 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">15584 ms</span>
+                <span class="method-start">8732 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">deveInformarEnderecoEscolhidoNavBar</span>
-                <span class="method-start">22027 ms</span>
+                <span class="method-start">11925 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">26223 ms</span>
+                <span class="method-start">14586 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">27116 ms</span>
+                <span class="method-start">15295 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio</span>
-                <span class="method-start">31879 ms</span>
+                <span class="method-start">18464 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">31952 ms</span>
+                <span class="method-start">18495 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">32783 ms</span>
+                <span class="method-start">19145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido</span>
-                <span class="method-start">38136 ms</span>
+                <span class="method-start">22210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">41438 ms</span>
+                <span class="method-start">24373 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">42322 ms</span>
+                <span class="method-start">25084 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">devePedirNumeroDoEnderecoCasoNaoSejaInformado</span>
-                <span class="method-start">47551 ms</span>
+                <span class="method-start">28636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">49979 ms</span>
+                <span class="method-start">30496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">50856 ms</span>
+                <span class="method-start">31204 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deveRetornarMensagemErroAoInformarEnderecoInvalido</span>
-                <span class="method-start">55717 ms</span>
+                <span class="method-start">34333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">57518 ms</span>
+                <span class="method-start">35745 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.ifood.steps.HomeSteps</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">58364 ms</span>
+                <span class="method-start">36442 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeveRedirecionarParaAPaginaDaLoja</span>
-                <span class="method-start">63613 ms</span>
+                <span class="method-start">39727 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">71228 ms</span>
+                <span class="method-start">46154 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">72329 ms</span>
+                <span class="method-start">47005 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testeVerficarQuartoBannerEstaAtivo</span>
-                <span class="method-start">77302 ms</span>
+                <span class="method-start">50225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">84210 ms</span>
+                <span class="method-start">61132 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">85441 ms</span>
+                <span class="method-start">62088 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testeVerificarBotaoSwipeDisabledCasoAListaAcabe</span>
-                <span class="method-start">90111 ms</span>
+                <span class="method-start">65307 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">102880 ms</span>
+                <span class="method-start">76284 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">104144 ms</span>
+                <span class="method-start">77114 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeVerificarImagemTrocaDeTamanho</span>
-                <span class="method-start">108700 ms</span>
+                <span class="method-start">80407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">115606 ms</span>
+                <span class="method-start">85759 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">116808 ms</span>
+                <span class="method-start">86543 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testeVerificarSeListaAumentaAoClicarVerMais</span>
-                <span class="method-start">122027 ms</span>
+                <span class="method-start">89827 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">128966 ms</span>
+                <span class="method-start">95434 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.ifood.steps.NavbarSteps</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">130072 ms</span>
+                <span class="method-start">96200 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeveAdicionarItemAoCarrinho</span>
-                <span class="method-start">134526 ms</span>
+                <span class="method-start">99289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">160795 ms</span>
+                <span class="method-start">114341 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">162005 ms</span>
+                <span class="method-start">115209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeveInformarErroCasoDigiteCupomInvalido</span>
-                <span class="method-start">166824 ms</span>
+                <span class="method-start">118389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">193276 ms</span>
+                <span class="method-start">131490 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">194741 ms</span>
+                <span class="method-start">132364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testeDeveInformarQueOCarrinhoEstaVazio</span>
-                <span class="method-start">199484 ms</span>
+                <span class="method-start">135470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">203582 ms</span>
+                <span class="method-start">138871 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">204561 ms</span>
+                <span class="method-start">139593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeveRemoverProdutoDoCarrinhoComSucesso</span>
-                <span class="method-start">210293 ms</span>
+                <span class="method-start">142647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">232483 ms</span>
+                <span class="method-start">156120 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">233808 ms</span>
+                <span class="method-start">156992 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeveRetornarProdutoNaoEncontrado</span>
-                <span class="method-start">238061 ms</span>
+                <span class="method-start">160042 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">244340 ms</span>
+                <span class="method-start">163629 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">abrirNavegador</span>
-                <span class="method-start">245298 ms</span>
+                <span class="method-start">164377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testeListarProdutoOuLojaBuscada</span>
-                <span class="method-start">249908 ms</span>
+                <span class="method-start">167484 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fecharNavegador</span>
-                <span class="method-start">254272 ms</span>
+                <span class="method-start">170537 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

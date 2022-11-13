@@ -1,5 +1,6 @@
 package br.com.ifood.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -43,17 +44,18 @@ public class NavbarPage extends BasePage {
 
     public static final By btnRemoverProdutoCarrinho =
             By.cssSelector("body > div.drawer > div > div > div > div > div > div:nth-child(2) > div > div > div.restaurant-cart-items-list > div > div.restaurant-cart-item__buttons-wrapper > button.btn.btn--link.btn--gray.btn--size-m.restaurant-cart-item__button");
-
+    @Step("Preencher campo buscar.")
     public void preencherCampoBuscar(String item) {
 
         sendKeys(campoBuscarItemOuLoja, item);
     }
+    @Step("Cliclar em buscar.")
     public void pressionarTeclaEnterCampoEnter() {
 
         WebElement campoBuscar = element(campoBuscarItemOuLoja);
         campoBuscar.sendKeys(Keys.ENTER);
     }
-
+    @Step("Cliclar no botão adicionar cupom.")
     public void clicarBtnAdicionarCupom() {
 
         click(btnAdicionarCupom);
@@ -63,28 +65,28 @@ public class NavbarPage extends BasePage {
 
         return getText(msgErroNenhumProduto);
     }
-
+    @Step("Cliclar no primeiro item da lista.")
     public void clicarNoPrimeiroItemDaLista() {
 
         click(primeiroItemDaLista);
     }
 
-
+    @Step("Cliclar no botão fechar modal do produto.")
     public void clicarBotaoFecharModalProduto() {
 
         click(btnFecharModalProduto);
     }
-
+    @Step("Cliclar no botão adicionar ao carrinho.")
     public void clicarAdicionarAoCarrinho() {
 
         click(btnAdicionarAoCarrinho);
     }
-
+    @Step("Cliclar no botão do carrinho.")
     public void clicarBtnCarrinho() {
 
         click(btnCarrinho);
     }
-
+    @Step("Cliclar no botão buscar item.")
     public void clicarBtnBuscarPorItem() {
 
         click(btnMudarBuscaPorItem);
@@ -110,17 +112,17 @@ public class NavbarPage extends BasePage {
 
         return getText(toastCupomInvalido);
     }
-
+    @Step("Cliclar no botão cupom.")
     public void clicarBtnCupom() {
 
         click(divBtnCupom);
     }
-
+    @Step("Preencher campo cupom.")
     public void preencherCampoCupom(String cupom) {
 
         sendKeys(campoCupom, cupom);
     }
-
+    @Step("Cliclar no botão remover.")
     public void clicarBtnRemoverProdutoCarrinho() {
 
         click(btnRemoverProdutoCarrinho);

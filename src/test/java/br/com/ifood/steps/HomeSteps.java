@@ -11,7 +11,8 @@ public class HomeSteps extends BaseSteps {
     HomePage homePage = new HomePage();
 
 
-    @Test
+    @Test(description = "Teste hover imagem do carrossel")
+    @Description("Descrição Teste: Validar que imagem do carrossel aumenta de tamanho ao passar mouse.")
     public void testeVerificarImagemTrocaDeTamanho() {
 
         homePage.entrarPaginaHome();
@@ -20,7 +21,8 @@ public class HomeSteps extends BaseSteps {
         Assert.assertNotEquals("none", homePage.pegarTamanhoBannerImage());
     }
 
-    @Test
+    @Test(description = "Teste troca imagem carrossel")
+    @Description("Descrição Teste: Validar clicar no botão next troca a imagem ativa do carrossel")
     public void testeVerficarQuartoBannerEstaAtivo() {
 
         homePage.entrarPaginaHome();
@@ -29,7 +31,8 @@ public class HomeSteps extends BaseSteps {
         Assert.assertEquals("swiper-slide swiper-slide-active", homePage.verificarClasseQuartoBanner());
     }
 
-    @Test
+    @Test(description = "Teste botão carrossel")
+    @Description("Descrição Teste: Validar que botão fica disabled caso a lista acabe.")
     public void testeVerificarBotaoSwipeDisabledCasoAListaAcabe() {
 
         homePage.entrarPaginaHome();
@@ -68,6 +71,4 @@ public class HomeSteps extends BaseSteps {
 
         Assert.assertTrue(urlAtual.contains(tituloLoja));
     }
-
-
 }

@@ -64,7 +64,8 @@ public class NavbarSteps extends BaseSteps{
         Assert.assertFalse(msgError);
     }
 
-    @Test
+    @Test(description = "Teste carrinho vazio")
+    @Description("Descrição Teste: Validar que o carrinho está vazio.")
     public void testeDeveInformarQueOCarrinhoEstaVazio() {
 
         homePage.entrarPaginaHome();
@@ -74,7 +75,8 @@ public class NavbarSteps extends BaseSteps{
         Assert.assertEquals("Sua sacola está vazia", msgErro);
     }
 
-    @Test
+    @Test(description = "Teste adicionar cupom inválido")
+    @Description("Descrição Teste: Validar adicionar cupom inválido retorna mensagem de erro.")
     public void testeDeveInformarErroCasoDigiteCupomInvalido() throws InterruptedException {
 
         homePage.entrarPaginaHome();
@@ -95,7 +97,8 @@ public class NavbarSteps extends BaseSteps{
         Assert.assertEquals(msgErro, "Cupom inválido.");
     }
 
-    @Test
+    @Test(description = "Teste remover produto")
+    @Description("Descrição Teste: Validar remover item do carrinho com sucesso .")
     public void testeDeveRemoverProdutoDoCarrinhoComSucesso() {
 
         homePage.entrarPaginaHome();

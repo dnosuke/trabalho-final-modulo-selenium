@@ -1,33 +1,53 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 258.679 s <<< FAILURE! - in TestSuite
-br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido  Time elapsed: 2.965 s  <<< FAILURE!
+Tests run: 17, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 172.814 s <<< FAILURE! - in TestSuite
+br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar  Time elapsed: 2.316 s  <<< FAILURE!
+java.lang.AssertionError: 
+expected [R. Prof. Geraldo Rosa,
+588] but found [R. Uberlândia,
+588]
+	at br.com.ifood.steps.LandingSteps.deveInformarEnderecoEscolhidoNavBar(LandingSteps.java:25)
+
+br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido  Time elapsed: 1.911 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [null]
 	at br.com.ifood.steps.LandingSteps.deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido(LandingSteps.java:80)
 
-br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe  Time elapsed: 12.586 s  <<< FAILURE!
+br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo  Time elapsed: 10.7 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68308fc400d082e86f98e03a50ec39be, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68308fc400d082e86f98e03a50ec39be
+	at br.com.ifood.steps.HomeSteps.testeVerficarQuartoBannerEstaAtivo(HomeSteps.java:31)
+
+br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe  Time elapsed: 10.789 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next"}
   (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DBC-000564', ip: '192.168.100.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d0df0c4e9bfc3932f1d06af013302c0, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\RAWAD~1.YEH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52906/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d0df0c4e9bfc3932f1d06af013302c0
-	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:41)
+Command: [5bf6a9637067af828a745b5256f88442, findElement {using=css selector, value=#__next > div:nth-child(1) > main > div > div.content-container.cardstack-home > section > article:nth-child(1) > section:nth-child(2) > ul > div > div.swiper-button-next}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\alain\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55011/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf6a9637067af828a745b5256f88442
+	at br.com.ifood.steps.HomeSteps.testeVerificarBotaoSwipeDisabledCasoAListaAcabe(HomeSteps.java:44)
 
-br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 6.678 s  <<< FAILURE!
+br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais  Time elapsed: 5.359 s  <<< FAILURE!
 java.lang.AssertionError: did not expect [20] but found [20]
-	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:54)
+	at br.com.ifood.steps.HomeSteps.testeVerificarSeListaAumentaAoClicarVerMais(HomeSteps.java:57)
 
-br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio  Time elapsed: 3.868 s  <<< FAILURE!
+br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio  Time elapsed: 3.139 s  <<< FAILURE!
 java.lang.AssertionError: expected [] but found [Sua sacola está vazia]
-	at br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio(NavbarSteps.java:69)
+	at br.com.ifood.steps.NavbarSteps.testeDeveInformarQueOCarrinhoEstaVazio(NavbarSteps.java:75)
 
-br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada  Time elapsed: 4.003 s  <<< FAILURE!
+br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada  Time elapsed: 2.79 s  <<< FAILURE!
 java.lang.AssertionError: expected [https://www.ifood.com.br/busca?q=cerveja] but found [https://www.ifood.com.br/inicio]
-	at br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada(NavbarSteps.java:28)
+	at br.com.ifood.steps.NavbarSteps.testeListarProdutoOuLojaBuscada(NavbarSteps.java:31)
 

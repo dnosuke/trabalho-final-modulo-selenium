@@ -18,12 +18,14 @@
         <methods>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
+          <include name="deveInformarEnderecoEscolhidoNavBar"/>
           <include name="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido"/>
         </methods>
       </class> <!-- br.com.ifood.steps.LandingSteps -->
       <class name="br.com.ifood.steps.HomeSteps">
         <methods>
           <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
+          <include name="testeVerficarQuartoBannerEstaAtivo"/>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
           <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
