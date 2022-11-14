@@ -8,11 +8,10 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 import java.util.logging.Level;
 
 public class Browser {
-
     public static WebDriver driver;
     public static WebDriverWait wait;
 
@@ -25,16 +24,17 @@ public class Browser {
         logPrefs.enable( LogType.PERFORMANCE, Level.ALL );
         options.setCapability( "goog:loggingPrefs", logPrefs );
 
+
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20, 1));
 
         driver.get(url);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
-
 
     public void browserDown() {
         driver.quit();
     }
+
 }

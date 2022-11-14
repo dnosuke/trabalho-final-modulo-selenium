@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="2">
+    <listeners>
+        <listener class-name="br.com.ifood.util.ListenerTest"></listener>
+    </listeners>
+    <test name="Home">
+        <classes>
+            <class name="br.com.ifood.steps.BaseSteps" />
+            <class name="br.com.ifood.steps.HomeSteps" />
+            <class name="br.com.ifood.steps.NavbarSteps" />
+            <class name="br.com.ifood.steps.LandingSteps" />
+        </classes>
+    </test>
+</suite>

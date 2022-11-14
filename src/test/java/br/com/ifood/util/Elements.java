@@ -3,7 +3,6 @@ package br.com.ifood.util;
 import br.com.ifood.steps.BaseSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Elements extends BaseSteps {

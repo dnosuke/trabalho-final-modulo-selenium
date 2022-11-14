@@ -1,18 +1,20 @@
 package br.com.ifood.steps;
 
 import br.com.ifood.util.Browser;
-import org.junit.After;
-import org.junit.Before;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
 
 public class BaseSteps extends Browser {
 
-    @Before
+    @BeforeMethod
     public void abrirNavegador() {
         browserUp("https://www.ifood.com.br/inicio");
     }
 
-    @After
+    @AfterMethod
     public void fecharNavegador() {
         browserDown();
     }
+
 }
