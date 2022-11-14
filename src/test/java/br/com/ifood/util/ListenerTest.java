@@ -38,7 +38,6 @@ public class ListenerTest implements ITestListener {
         catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

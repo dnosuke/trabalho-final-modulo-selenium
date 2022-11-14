@@ -1,6 +1,5 @@
 package br.com.ifood.pages;
 
-
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -53,10 +52,9 @@ public class LandingPage extends BasePage{
 
     public String buscarCampoMensagemErroEnderecoInvalido() {
 
-
-
         return getText(mensagemErroEnderecoInvalido);
     }
+
     @Step("Cliclar primeiro item da lista de busca.")
     public void clicarPrimeiroItemDaLista() {
 
@@ -72,7 +70,6 @@ public class LandingPage extends BasePage{
 
         click(botaoSalvarEndereco);
     }
-
     public String buscarCampoEndereco() {
 
         return element(campoEnderecoInicio).getAttribute("aria-label");

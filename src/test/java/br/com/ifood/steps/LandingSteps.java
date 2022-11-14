@@ -2,12 +2,14 @@ package br.com.ifood.steps;
 
 import br.com.ifood.pages.HomePage;
 import br.com.ifood.pages.LandingPage;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Feature("Landing Teste")
+@Feature("Landing Page")
 public class LandingSteps extends BaseSteps{
     LandingPage landingPage = new LandingPage();
 
@@ -26,7 +28,8 @@ public class LandingSteps extends BaseSteps{
                 "588", homePage.buscarCampoEndreco());
     }
 
-    @Test
+    @Test(description = "Teste não preenche campo endereço.")
+    @Description("Descrição Teste: Validar deve informar ao usuário para preencher endereço.")
     public void deveInformarUsuarioParaBuscarEnderecoCasoCampoEstejaVazio() {
 
         String campoVazio = landingPage.buscarCampoEndereco();

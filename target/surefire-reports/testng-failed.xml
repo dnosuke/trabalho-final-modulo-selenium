@@ -6,14 +6,15 @@
   </listeners>
   <test thread-count="5" verbose="0" name="User Tests(failed)">
     <classes>
-      <class name="br.com.ifood.steps.NavbarSteps">
+      <class name="br.com.ifood.steps.HomeSteps">
         <methods>
+          <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
+          <include name="testeVerficarQuartoBannerEstaAtivo"/>
           <include name="abrirNavegador"/>
           <include name="fecharNavegador"/>
-          <include name="testeDeveInformarQueOCarrinhoEstaVazio"/>
-          <include name="testeListarProdutoOuLojaBuscada"/>
+          <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
         </methods>
-      </class> <!-- br.com.ifood.steps.NavbarSteps -->
+      </class> <!-- br.com.ifood.steps.HomeSteps -->
       <class name="br.com.ifood.steps.LandingSteps">
         <methods>
           <include name="abrirNavegador"/>
@@ -21,14 +22,6 @@
           <include name="deveManterBtnDesabilitadoCasoSejaDigitadoValorInvalido"/>
         </methods>
       </class> <!-- br.com.ifood.steps.LandingSteps -->
-      <class name="br.com.ifood.steps.HomeSteps">
-        <methods>
-          <include name="testeVerificarBotaoSwipeDisabledCasoAListaAcabe"/>
-          <include name="abrirNavegador"/>
-          <include name="fecharNavegador"/>
-          <include name="testeVerificarSeListaAumentaAoClicarVerMais"/>
-        </methods>
-      </class> <!-- br.com.ifood.steps.HomeSteps -->
     </classes>
   </test> <!-- User Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
