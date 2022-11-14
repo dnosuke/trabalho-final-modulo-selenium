@@ -4,12 +4,12 @@
     <listeners>
         <listener class-name="br.com.ifood.util.ListenerTest"></listener>
     </listeners>
-    <test name="User Tests">
+    <test name="Home">
         <classes>
             <class name="br.com.ifood.steps.BaseSteps" />
-            <class name="br.com.ifood.steps.LandingSteps" />
             <class name="br.com.ifood.steps.HomeSteps" />
             <class name="br.com.ifood.steps.NavbarSteps" />
+            <class name="br.com.ifood.steps.LandingSteps" />
         </classes>
     </test>
 </suite>
