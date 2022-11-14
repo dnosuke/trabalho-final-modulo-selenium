@@ -89,7 +89,6 @@ public class HomePage extends BasePage {
         Actions action = new Actions(driver);
 
         action.moveToElement(element(bigBannerImage)).perform();
-
     }
 
     public String pegarTamanhoBannerImage() {

@@ -3,9 +3,11 @@ package br.com.ifood.steps;
 import br.com.ifood.pages.HomePage;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+@Feature("Home Page")
 public class HomeSteps extends BaseSteps {
 
     HomePage homePage = new HomePage();

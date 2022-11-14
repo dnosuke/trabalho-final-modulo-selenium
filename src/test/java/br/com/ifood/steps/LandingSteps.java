@@ -2,12 +2,14 @@ package br.com.ifood.steps;
 
 import br.com.ifood.pages.HomePage;
 import br.com.ifood.pages.LandingPage;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Feature("Landing Teste")
+@Feature("Landing Page")
 public class LandingSteps extends BaseSteps{
     LandingPage landingPage = new LandingPage();
 

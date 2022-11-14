@@ -5,9 +5,11 @@ import br.com.ifood.pages.NavbarPage;
 
 import io.qameta.allure.Description;
 
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+@Feature("Navbar Page")
 public class NavbarSteps extends BaseSteps{
 
     NavbarPage navbarPage = new NavbarPage();
@@ -18,13 +20,14 @@ public class NavbarSteps extends BaseSteps{
 
     @Test(description = "Teste buscar produto.")
     @Description("Descrição Teste: Validar buscar produto redireciona para página com lista de produtos.")
-    public void testeListarProdutoOuLojaBuscada() {
+    public void testeListarProdutoOuLojaBuscada() throws InterruptedException {
 
         homePage.entrarPaginaHome();
 
         String produtoBuscado = "cerveja";
         navbarPage.preencherCampoBuscar(produtoBuscado);
         navbarPage.pressionarTeclaEnterCampoEnter();
+        Thread.sleep(500);
 
         String ulrAtual = driver.getCurrentUrl();
 
@@ -66,10 +69,11 @@ public class NavbarSteps extends BaseSteps{
 
     @Test(description = "Teste carrinho vazio")
     @Description("Descrição Teste: Validar que o carrinho está vazio.")
-    public void testeDeveInformarQueOCarrinhoEstaVazio() {
+    public void testeDeveInformarQueOCarrinhoEstaVazio() throws InterruptedException {
 
         homePage.entrarPaginaHome();
         navbarPage.clicarBtnCarrinho();
+        Thread.sleep(1000);
         String msgErro = navbarPage.buscarMesnagemCarrinhoVazio();
 
         Assert.assertEquals("Sua sacola está vazia", msgErro);
@@ -99,7 +103,7 @@ public class NavbarSteps extends BaseSteps{
 
     @Test(description = "Teste remover produto")
     @Description("Descrição Teste: Validar remover item do carrinho com sucesso .")
-    public void testeDeveRemoverProdutoDoCarrinhoComSucesso() {
+    public void testeDeveRemoverProdutoDoCarrinhoComSucesso() throws InterruptedException {
 
         homePage.entrarPaginaHome();
 
@@ -110,6 +114,7 @@ public class NavbarSteps extends BaseSteps{
         navbarPage.clicarAdicionarAoCarrinho();
         navbarPage.clicarBotaoFecharModalProduto();
         navbarPage.clicarBtnCarrinho();
+        Thread.sleep(500);
         navbarPage.clicarBtnRemoverProdutoCarrinho();
 
         Boolean msgError = navbarPage.verificarMsgCarrinhoVazioEstaPresente();
